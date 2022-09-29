@@ -5,3 +5,15 @@ if __name__ == '__main__':
     for i in range (0,n):
         print(i*i)
         i=i+1
+        
+#LeapYear 
+def is_leap(year):
+  leap=False
+  
+  if(year%4==0 and (year%100!=0 or year%400==0)):
+    return True
+  else:
+    return leap
+    
+year = int(input())
+print(is_leap(year))
